@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Genius</title>
+</head>
+
+<body>
+  <div class="genius">
+    <button type="button" class="genius_item genius_item-0 item_click" id="color-0"></button>
+    <button type="button" class="genius_item genius_item-1 item_click" id="color-1"></button>
+    <button type="button" class="genius_item genius_item-2 item_click" id="color-2"></button>
+    <button type="button" class="genius_item genius_item-3 item_click" id="color-3"></button>
+    <button type="button" onclick="startGame()" class="genius_item genius_start genius_item_midle" id="start">Start
+      Genius!!!</button>
+  </div>
+  <div id="genius_score">
+    0
+  </div>
+
+  <!-- Modal -->
+  <div id="modal-error" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Ops... =(</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          You lost... Try again!! =)
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="restart()">Try again!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

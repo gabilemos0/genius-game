@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+:root {
+  --borderRadius: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.3s ease-out all;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+  background: #ddd;
+}
+
+#genius_score {
+  font-size: 4rem;
+}
+
+.genius {
+  margin: 40px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border-radius: 50%;
+  border: 10px solid #f4f4f4;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.genius_item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  float: left;
+  border: 10px solid transparent;
+  box-sizing: border-box;
+}
+
+.genius_item-0 {
+  background-color: rgb(249, 208, 48);
+  border-radius: var(--borderRadius) 0 0 0;
+}
+
+.genius_item-0:hover,
+.genius_item-0:active,
+.genius_item-0_active {
+  border-color: rgb(219, 175, 0);
+}
+
+.genius_item-1 {
+  background-color: rgb(246, 42, 160);
+  border-radius: 0 var(--borderRadius) 0 0;
+}
+
+.genius_item-1:hover,
+.genius_item-1:active,
+.genius_item-1_active {
+  border-color: rgb(171, 43, 115);
+}
+
+.genius_item-2 {
+  background-color: rgb(184, 238, 48);
+  border-radius: 0 0 0 var(--borderRadius);
+}
+
+.genius_item-2:hover,
+.genius_item-2:active,
+.genius_item-2_active {
+  border-color: rgb(127, 166, 34);
+}
+
+.genius_item-3 {
+  background-color: rgb(38, 223, 208);
+  border-radius: 0 0 var(--borderRadius) 0;
+}
+
+.genius_item-3:hover,
+.genius_item-3:active,
+.genius_item-3_active {
+  border-color: rgb(45, 165, 157);
+}
+
+.genius_start {
+  width: 37%;
+  height: 37%;
+  background-color: #ddd;
+  border-radius: 50%;
+  border: 10px solid #c3c3c3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #303030;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.genius_start:hover,
+.genius_start:active {
+  border-color: #f4f4f4;
+}
+
+.genius_start:disabled,
+.genius_start[disabled]:hover {
+  background-color: #ddd;
+  border-color: #f4f4f4;
+}

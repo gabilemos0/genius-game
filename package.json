@@ -1,0 +1,18 @@
+{
+  "name": "projeto-final-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn tsc --build",
+    "watch": "yarn tsc --build --watch"
+  },
+  "author": "Gabriela Lemos",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
